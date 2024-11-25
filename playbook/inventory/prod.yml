@@ -1,5 +1,6 @@
 ---
   el:
+    remote_user: seregin
     hosts:
       centos7:
         ansible_connection: docker
@@ -7,3 +8,7 @@
     hosts:
       ubuntu:
         ansible_connection: docker
+  local:
+    hosts:
+      localhost:
+        ansible_connection: local
